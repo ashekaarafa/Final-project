@@ -35,6 +35,9 @@ def get_d():
     # acf plot for d = 2
     plot_acf(a.diff().diff().dropna(), ax=axes[1, 1])
     axes[1, 1].set_title("Acf plot for d = 2")
+    
+    plt.subplots_adjust(wspace=0.3,
+                        hspace=0.3)
 
     plt.show()
     ba = input("Enter d:")
