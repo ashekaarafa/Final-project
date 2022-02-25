@@ -114,9 +114,13 @@ class Modelling:
 
 
 if __name__ == '__main__':
-    my_df = pd.read_csv("modified_average_file.csv", header=0,
-                        index_col=False,
-                        skipinitialspace=True,
-                        skip_blank_lines=True)
-    datas = Modelling(my_df)
-    print(datas.get_forecast_model())
+    try:
+        my_df = pd.read_csv("D:\pythonProject\danube\modified_average_file.csv", header=0,
+                            index_col=False,
+                            skipinitialspace=True,
+                            skip_blank_lines=True)
+        datas = Modelling(my_df)
+        print(datas.get_forecast_model())
+    except FileNotFoundError:
+        print("Please enter the correct file path")
+
