@@ -1,4 +1,4 @@
-# Hydrological Time Series Analysis of Danube River at HOfkirchen
+# Hydrological Time Series Analysis of Danube River at Hofkirchen
 
 ![rhone](https://github.com/sahasandip/Final-project/blob/cd1097b89d92d9c5154296f89b1a2826fb43c737/danube.jpg)
 
@@ -7,6 +7,7 @@
 >   ***Goals***: Analysis of flow data to get water level forecast with autoregressive integrated moving average(ARIMA) model.
 
 >   ***Requirements***: *Python* libraries: *numpy*, *pandas*, *statsmodels* and *matplotlib*. 
+
 Get ready by cloning the repository:
 
 ```
@@ -31,7 +32,7 @@ The daily water level at Hofkirchen station, are available from 2021.12.31  to 0
 The name of the file is set according to the dates, for example: 01.01.2022.csv. Each file contains water level data (mÂ³/s) at 15 mins interval.
 Missing values are written as XXX. The data has header.
 
-### _File list:_
+## _File list:_
 
 1. _my_config.py_ : Import all necessary modules and packages
 2. _main.py:_ The above  files are plugged in "main.py" to calculate the future water levels.
@@ -48,7 +49,8 @@ Missing values are written as XXX. The data has header.
 5. _myapp.py:_ It is an "Water level Forecast"app using Graphical User Interface(GUI).
 Download the code_block from this link()
 
-###Running instruction:
+##Running instruction:
+
 Firstly, we need to run the `main.py` file. It will create or edit existing"modified_average_file.csv" and 
 print water level forecast data in the prompt. Also, it will create a graph with daily the water level. 
 Running the `main2.py` file it will create 4 graphs. Take the decision on the value of d after visualizing the graph
@@ -56,7 +58,9 @@ Running the `main2.py` file it will create 4 graphs. Take the decision on the va
 with acf and pacf plot will show up. After visualizing the graph, take decision on p and q value. Then,
 cross the graph. You will be asked to enter the p and q value from the prompt. Enter an integer number
 for example (p=1, q=0, for our case). Next, It will print the forecast data with necessary information.
-###1. my_config.py: 
+
+##1. my_config.py: 
+
 _import necessary modules and packages_
 ```python
 import numpy as np
@@ -74,7 +78,8 @@ from statsmodels.graphics.tsaplots import plot_acf
 from statsmodels.graphics.tsaplots import plot_pacf
 import mypkg as pkg
 ```
- ###3. main.py:
+
+##3. main.py:
  
 from my_config import *
 
@@ -188,7 +193,8 @@ Date Estimates_water_level
     my forecast = our model prediction for next 10 days with overall timeseries
 	
 	
-###4. main_2.py
+##4. main_2.py
+
 from my_config import *
 
 
@@ -262,7 +268,7 @@ Name: predicted_mean, dtype: float64
 Process finished with exit code 0
 ```
 
-###5. myapp.py: 
+##5. myapp.py: 
 
 first you need to import all necessary modules and libraries.
 ```python
@@ -293,7 +299,7 @@ step 4: click "check" button to see the result.
 
 Here is the final output you can see by clicking on the link(https://github.com/sahasandip/Final-project/blob/main/GUI.JPG)
 
-###2. mypkg:
+##2. mypkg:
 `mypkg` folder contains an __init__ file and three class file.
 
 **1. dataedit.py:**
@@ -555,7 +561,7 @@ Process finished with exit code 0
 ```
 **9.`__str__`:**  magic method to print the model evaluation information.
 
-### classical_arima.py
+**3.classical_arima.py**
 Contains class Classical. Input parameter : a dataframe. With column name "Date", "Average_Water_Level". 
 Method are below
 
