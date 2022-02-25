@@ -96,7 +96,7 @@ will create a list similar like this
 					A data frame "myy_df" is created with "Date", "Average_Water_Level"
 					The dataframe will rewrite or create a new file called "modified_average_file.csv".
 					The file will look like this:
-```python					
+```					
 Date,Average_Water_Level
 
 2021-11-19,356.09
@@ -165,11 +165,12 @@ Date,Average_Water_Level
 		Afterwards, predicted data is calculated for the next 10 days.
 
 runing the main.py file will print this:
-		
+
+```		
 the root mean square error of our model is 9.694525351159205
 
 the correlation coefficient is 0.7835117705002723
-```python
+
 Date Estimates_water_level
 
 0 2022-01-24             528.947969
@@ -219,7 +220,8 @@ Visulizing the pacf plot we observe that one data goes much lower. So we conside
 From acf plot we select our q parameter = 0. Expert opinion is always good to select the parameters through graph visualization.
 return a tuple (p,d,q)=(1,0,0). Link of the fig: 
 
-https://github.com/sahasandip/Final-project/blob/main/pacf.png
+https://github.com/sahasandip/Final-project/blob/main/pacf.png,
+
 https://github.com/sahasandip/Final-project/blob/main/acf.png
 
 
@@ -227,7 +229,7 @@ https://github.com/sahasandip/Final-project/blob/main/acf.png
 
 running the main_2.py will show similar to this.
 
-```python
+```
 C:\Users\asheka\anaconda3\python.exe D:/pythonProject/danube/main_2.py
 
 Results of Dickey-Fuller Test:
