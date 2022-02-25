@@ -193,7 +193,7 @@ Date Estimates_water_level
     my forecast = our model prediction for next 10 days with overall timeseries
 	
 	
-##4. main_2.py
+## _4. main_2.py_
 
 from my_config import *
 
@@ -268,7 +268,7 @@ Name: predicted_mean, dtype: float64
 Process finished with exit code 0
 ```
 
-##5. myapp.py: 
+## _4. myapp.py:_ 
 
 first you need to import all necessary modules and libraries.
 ```python
@@ -299,7 +299,7 @@ step 4: click "check" button to see the result.
 
 Here is the final output you can see by clicking on the link(https://github.com/sahasandip/Final-project/blob/main/GUI.JPG)
 
-##2. mypkg:
+## _5. mypkg:_
 `mypkg` folder contains an __init__ file and three class file.
 
 **1. dataedit.py:**
