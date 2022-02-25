@@ -79,7 +79,7 @@ from statsmodels.graphics.tsaplots import plot_pacf
 import mypkg as pkg
 ```
 
-## _3. main.py:_
+## _2. main.py:_
  
 from my_config import *
 
@@ -193,7 +193,7 @@ Date Estimates_water_level
     my forecast = our model prediction for next 10 days with overall timeseries
 	
 	
-## _4. main_2.py_
+## _3. main_2.py_
 
 from my_config import *
 
