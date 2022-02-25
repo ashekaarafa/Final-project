@@ -77,5 +77,11 @@ class DataRead:
 
 
 if __name__ == '__main__':
-    data1 = DataRead(r"C:\Users\sandi\danube\danube\my_data", "01.12.2021.csv")
-    print(data1.get_average_data)
+    try:
+        data1 = DataRead("D:\pythonProject\danube\my_data", "01.12.2021.csv")
+        print(data1.get_average_data)
+
+    except FileNotFoundError:
+        print("Please enter the correct file path")
+
+    
