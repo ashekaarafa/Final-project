@@ -49,7 +49,7 @@ Missing values are written as XXX. The data has header.
 5. _myapp.py:_ It is an "Water level Forecast"app using Graphical User Interface(GUI).
 Download the code_block from this link()
 
-##Running instruction:
+## _Running instruction:_
 
 Firstly, we need to run the `main.py` file. It will create or edit existing"modified_average_file.csv" and 
 print water level forecast data in the prompt. Also, it will create a graph with daily the water level. 
@@ -59,7 +59,7 @@ with acf and pacf plot will show up. After visualizing the graph, take decision 
 cross the graph. You will be asked to enter the p and q value from the prompt. Enter an integer number
 for example (p=1, q=0, for our case). Next, It will print the forecast data with necessary information.
 
-##1. my_config.py: 
+## _1. my_config.py:_ 
 
 _import necessary modules and packages_
 ```python
@@ -79,7 +79,7 @@ from statsmodels.graphics.tsaplots import plot_pacf
 import mypkg as pkg
 ```
 
-##3. main.py:
+## _3. main.py:_
  
 from my_config import *
 
