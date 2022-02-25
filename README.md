@@ -47,7 +47,8 @@ Missing values are written as XXX. The data has header.
       
     **classical_arima.py**: Contains class Classical. Implementing ARIMA model after manually selecting the parameters (p, d, q).
 5. _myapp.py:_ It is an "Water level Forecast"app using Graphical User Interface(GUI).
-Download the code_block from this link()
+ 
+Download the code_block from this link (https://github.com/ashekaarafa/Final-project/blob/97a6548075fd27f26991edbc54dff1df376ae611/code_diagram.pdf)
 
 ## _Running instruction:_
 
