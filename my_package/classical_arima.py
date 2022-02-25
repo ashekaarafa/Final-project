@@ -84,12 +84,14 @@ class Classical:
 
 
 if __name__ == '__main__':
-    my_df = pd.read_csv(r"C:\Users\sandi\danube\danube\modified_average_file.csv",
-                        header=0,
-                        index_col=False,
-                        skipinitialspace=True,
-                        skip_blank_lines=True)
-    datas = Classical(my_df)
-    datas.my_order = "1 ,0 ,1"
-    print(datas.get_get_timeseries())
-    datas()
+    try:
+        my_df = pd.read_csv("D:\pythonProject\danube\modified_average_file.csv", header=0,
+                            index_col=False,
+                            skipinitialspace=True,
+                            skip_blank_lines=True)
+        datas = Classical(my_df)
+        datas.my_order = "1 ,0 ,1"
+        print(datas.get_get_timeseries())
+        datas()
+    except FileNotFoundError:
+        print("Please enter the correct file path")
